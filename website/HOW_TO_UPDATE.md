@@ -176,15 +176,19 @@ Suppose you want to add a 4th photo to the **Miniature Electromagnet**:
 
 ---
 
-## 🔄 How Dynamic Google Scholar Synchronization Works
+## 🔄 Automated Dynamic Synchronization (Google Scholar & GitHub)
 
-- **Automatic (Every 15 Days)**:
-  When hosted on GitHub, `.github/workflows/update_scholar.yml` runs automatically on the 1st and 15th of each month. It fetches your latest citation metrics (citations, h-index, i10-index) directly from Google Scholar (`user=Su9nLc4AAAAJ`) and updates `publications-data.js` and `index.html`.
-- **Manual Local Run**:
-  Run in terminal:
-  ```powershell
-  python website/scripts/update_scholar.py
-  ```
+- **Daily Automation (Every 24 Hours)**:
+  When hosted on GitHub, `.github/workflows/update_scholar.yml` runs automatically every day at 00:00 UTC (05:30 AM IST).
+  1. **Google Scholar**: Fetches latest citation metrics (total citations, h-index, i10-index, and per-paper counts) and updates `publications-data.js` and `index.html`.
+  2. **GitHub Repositories**: Queries your GitHub account (`@ArunBhas`), filters out the `portfolio` repo, preserves rich descriptions for your core tools, and automatically adds any new public repositories to the "Open-Source Scientific Software & Repositories" section.
+- **Manual Runs**:
+  - In GitHub: Go to **Actions** &rarr; **Dynamic Academic Sync (Scholar & GitHub)** &rarr; **Run workflow**.
+  - Locally:
+    ```powershell
+    python scripts/update_scholar.py
+    python scripts/update_github_repos.py
+    ```
 
 ---
 

@@ -1,4 +1,4 @@
-name: Dynamic Google Scholar Sync
+name: Dynamic Academic Sync (Scholar & GitHub)
 
 on:
   schedule:
@@ -32,16 +32,22 @@ jobs:
         run: |
           python scripts/update_scholar.py
 
+      - name: Run GitHub Repositories Synchronization
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python scripts/update_github_repos.py
+
       - name: Commit and Push Changes If Updated
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add website/assets/js/publications-data.js website/index.html index.html
           if git diff --staged --quiet; then
-            echo "No citation changes or new papers detected from Google Scholar."
+            echo "No citation changes or new repositories detected."
           else
-            git commit -m "chore: auto-sync Google Scholar citations & metrics [skip ci]"
+            git commit -m "chore: auto-sync Google Scholar citations & GitHub repositories [skip ci]"
             git push
-            echo "Successfully updated and pushed new Scholar metrics!"
+            echo "Successfully updated and pushed latest metrics & repositories!"
           fi
 
