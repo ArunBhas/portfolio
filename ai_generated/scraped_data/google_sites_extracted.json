@@ -1,0 +1,56 @@
+{
+  "home": {
+    "url": "https://sites.google.com/view/arunb/home",
+    "title": "Arun B",
+    "texts": [
+      "B. Arun",
+      "Senior Research Scholar, University of Hyderabad"
+    ],
+    "links": [],
+    "images": []
+  },
+  "publications": {
+    "url": "https://sites.google.com/view/arunb/publications",
+    "title": "Arun B - Publications",
+    "texts": [],
+    "links": [],
+    "images": []
+  },
+  "conferences": {
+    "url": "https://sites.google.com/view/arunb/conferences",
+    "title": "Arun B - Conferences",
+    "texts": [],
+    "links": [],
+    "images": []
+  },
+  "workshops": {
+    "url": "https://sites.google.com/view/arunb/workshops-and-trainings",
+    "title": "Arun B - Workshops and Trainings",
+    "texts": [],
+    "links": [],
+    "images": []
+  },
+  "experimental_setups": {
+    "url": "https://sites.google.com/view/arunb/experimental-setups-development",
+    "title": "Arun B - Experimental Setups Development",
+    "texts": [],
+    "links": [],
+    "images": []
+  },
+  "experience": {
+    "url": "https://sites.google.com/view/arunb/experience",
+    "title": "Arun B - Experience",
+    "texts": [
+      "Hands on Experience"
+    ],
+    "links": [],
+    "images": []
+  },
+  "gallery": {
+    "url": "https://sites.google.com/view/arunb/gallery",
+    "title": "Arun B - Gallery",
+    "texts": [],
+    "links": [],
+    "images": []
+  }
+}

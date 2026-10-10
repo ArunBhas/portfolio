@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curriculum Vitae | Arun B – University of Hyderabad</title>
+  
+  <meta name="description" content="Academic Curriculum Vitae of Arun B, Senior Research Scholar affiliated with School of Physics, University of Hyderabad (CASEST Laboratory).">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary: #1d4ed8;
+      --text-dark: #0f172a;
+      --text-gray: #475569;
+      --border: #e2e8f0;
+      --bg: #ffffff;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      color: var(--text-dark);
+      background-color: #f1f5f9;
+      line-height: 1.6;
+      padding: 40px 16px;
+    }
+
+    .cv-container {
+      max-width: 860px;
+      margin: 0 auto;
+      background: var(--bg);
+      padding: 64px 56px;
+      border-radius: 8px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+    }
+
+    .cv-header {
+      border-bottom: 2px solid var(--text-dark);
+      padding-bottom: 24px;
+      margin-bottom: 32px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 24px;
+    }
+
+    .cv-name {
+      font-size: 2.25rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      margin-bottom: 4px;
+    }
+
+    .cv-title {
+      font-size: 1.125rem;
+      font-weight: 600;
+      color: var(--primary);
+      margin-bottom: 4px;
+    }
+
+    .cv-dept {
+      font-size: 0.9375rem;
+      color: var(--text-gray);
+    }
+
+    .cv-contact-info {
+      text-align: right;
+      font-size: 0.875rem;
+      color: var(--text-gray);
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .cv-contact-info a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    .cv-contact-info a:hover {
+      text-decoration: underline;
+    }
+
+    .cv-section {
+      margin-bottom: 32px;
+      page-break-inside: avoid;
+    }
+
+    .cv-section-title {
+      font-size: 1.125rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--text-dark);
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 6px;
+      margin-bottom: 16px;
+    }
+
+    .cv-entry {
+      margin-bottom: 16px;
+    }
+
+    .cv-entry-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 4px;
+    }
+
+    .cv-entry-title {
+      font-weight: 700;
+      font-size: 1rem;
+    }
+
+    .cv-entry-date {
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: var(--text-gray);
+    }
+
+    .cv-entry-sub {
+      font-size: 0.9375rem;
+      color: var(--text-gray);
+      margin-bottom: 4px;
+    }
+
+    .cv-entry-desc {
+      font-size: 0.875rem;
+      color: var(--text-gray);
+    }
+
+    ol.cv-pub-list {
+      padding-left: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      font-size: 0.875rem;
+    }
+
+    ol.cv-pub-list li {
+      color: var(--text-gray);
+      line-height: 1.5;
+    }
+
+    ol.cv-pub-list strong {
+      color: var(--text-dark);
+    }
+
+    ol.cv-pub-list a {
+      color: var(--primary);
+      text-decoration: none;
+      word-break: break-all;
+    }
+
+    .skill-grid {
+      display: grid;
+      grid-template-columns: 140px 1fr;
+      gap: 10px 16px;
+      font-size: 0.875rem;
+    }
+
+    .skill-category {
+      font-weight: 700;
+      color: var(--text-dark);
+    }
+
+    .skill-items {
+      color: var(--text-gray);
+    }
+
+    /* Action bar */
+    .action-bar {
+      max-width: 860px;
+      margin: 0 auto 20px auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .btn-action {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 20px;
+      font-size: 0.875rem;
+      font-weight: 600;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+      background: #ffffff;
+      color: var(--text-dark);
+      cursor: pointer;
+      text-decoration: none;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+      transition: all 0.2s;
+    }
+
+    .btn-action:hover {
+      background: #f8fafc;
+      border-color: var(--primary);
+      color: var(--primary);
+    }
+
+    .btn-action.primary {
+      background: var(--primary);
+      color: #ffffff;
+      border-color: var(--primary);
+    }
+
+    .btn-action.primary:hover {
+      background: #1e40af;
+    }
+
+    @media print {
+      body {
+        background: #ffffff;
+        padding: 0;
+      }
+      .action-bar {
+        display: none !important;
+      }
+      .cv-container {
+        box-shadow: none;
+        padding: 0;
+      }
+      a {
+        color: inherit !important;
+        text-decoration: none !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="action-bar">
+    <a href="index.html" class="btn-action">
+      &larr; Back to Portfolio Website
+    </a>
+    <button onclick="window.print()" class="btn-action primary">
+      🖨️ Print / Save as PDF
+    </button>
+  </div>
+
+  <main class="cv-container">
+    <header class="cv-header">
+      <div>
+        <h1 class="cv-name">Arun B</h1>
+        <div class="cv-title">Senior Research Scholar (Applied Physics)</div>
+        <div class="cv-dept">
+          School of Physics, University of Hyderabad, Telangana, India<br>
+          <em>CASEST Laboratory</em>
+        </div>
+      </div>
+      <div class="cv-contact-info">
+        <div><strong>Email:</strong> <a href="mailto:arunskalikavu@gmail.com">arunskalikavu@gmail.com</a></div>
+        <div><strong>Phone:</strong> +91 9496845082</div>
+        <div><strong>Scholar:</strong> <a href="https://scholar.google.com/citations?user=Su9nLc4AAAAJ&hl=en" target="_blank">Google Scholar Profile</a></div>
+        <div><strong>ORCID:</strong> 0009-0005-7767-3128</div>
+        <div><strong>Location:</strong> Hyderabad 500046, India</div>
+      </div>
+    </header>
+
+    <!-- Fellowships & Qualifications -->
+    <section class="cv-section">
+      <h2 class="cv-section-title">National Fellowships & Eligibility</h2>
+      <div class="cv-entry">
+        <div class="cv-entry-header">
+          <span class="cv-entry-title">CSIR-UGC National Eligibility Test (NET) – Junior Research Fellowship (JRF)</span>
+          <span class="cv-entry-date">Qualified</span>
+        </div>
+        <div class="cv-entry-sub">Council of Scientific and Industrial Research, Physical Sciences</div>
+      </div>
+      <div class="cv-entry">
+        <div class="cv-entry-header">
+          <span class="cv-entry-title">Graduate Aptitude Test in Engineering (GATE)</span>
+          <span class="cv-entry-date">Qualified</span>
+        </div>
+        <div class="cv-entry-sub">Physics (PH)</div>
+      </div>
+      <div class="cv-entry">
+        <div class="cv-entry-header">
+          <span class="cv-entry-title">State Eligibility Test (SET)</span>
+          <span class="cv-entry-date">Qualified</span>
+        </div>
+        <div class="cv-entry-sub">Lectureship in Physical Sciences</div>
+      </div>
+      <div class="cv-entry">
+        <div class="cv-entry-header">
+          <span class="cv-entry-title">Bachelor of Education (B.Ed)</span>
+          <span class="cv-entry-date">Completed</span>
+        </div>
+        <div class="cv-entry-sub">Physical Science Education</div>
+      </div>
+    </section>
+
+    <!-- Professional Research Profile -->
+    <section class="cv-section">
+      <h2 class="cv-section-title">Current Research Appointment</h2>
+      <div class="cv-entry">
+        <div class="cv-entry-header">
+          <span class="cv-entry-title">Senior Research Scholar (Ph.D. Candidate)</span>
+          <span class="cv-entry-date">2020 – Present</span>
+        </div>
+        <div class="cv-entry-sub">School of Physics, University of Hyderabad (CASEST Laboratory)</div>
+        <div class="cv-entry-desc">
+          <strong>Supervisor:</strong> Prof. K. C. James Raju<br>
+          <strong>Dissertation Focus:</strong> Synthesis of soft magnetic FeGaB thin films, dynamic high-frequency magnetization dynamics, broadband VNA-FMR characterization, magnetoelectric voltage coefficients, and lightweight EMI shielding nanocomposites.
+        </div>
+      </div>
+    </section>
+
+    <!-- Research Metrics -->
+    <section class="cv-section">
+      <h2 class="cv-section-title">Scholarly Impact Summary</h2>
+      <div class="skill-grid">
+        <div class="skill-category">Publications:</div>
+        <div class="skill-items"><strong>22 Peer-Reviewed Journal & Conference Papers</strong></div>
+        <div class="skill-category">Citations:</div>
+        <div class="skill-items"><strong>185+ Citations</strong> (Google Scholar verified)</div>
+        <div class="skill-category">h-Index / i10:</div>
+        <div class="skill-items"><strong>7 / 7</strong></div>
+        <div class="skill-category">Memberships:</div>
+        <div class="skill-items"><strong>Life Member</strong>, Magnetic Society of India (LM 904)</div>
+      </div>
+    </section>
+
+    <!-- In-house Experimental Setups Developed -->
+    <section class="cv-section">
+      <h2 class="cv-section-title">Experimental Setups & Scientific Hardware Engineered</h2>
+      <div class="cv-entry">
+        <div class="cv-entry-header">
+          <span class="cv-entry-title">1. Broadband Vector Network Analyzer Ferromagnetic Resonance (VNA-FMR) System</span>
+        </div>
+        <div class="cv-entry-desc">Designed CPW-based transmission fixtures and field sweeps from 0.1–20 GHz for Landé g-factor, effective magnetization, and intrinsic damping extraction.</div>
+      </div>
+      <div class="cv-entry">
+        <div class="cv-entry-header">
+          <span class="cv-entry-title">2. Dynamic Magnetoelectric (&alpha;<sub>ME</sub>) Voltage Measurement Bench</span>
+        </div>
+        <div class="cv-entry-desc">Integrated DC bias magnetic fields (up to 4000 Oe) with high-precision Helmholtz AC field coils and lock-in detection for multiferroic sensor testing.</div>
+      </div>
+      <div class="cv-entry">
+        <div class="cv-entry-header">
+          <span class="cv-entry-title">3. Miniature In-Plane Electromagnet for RF Probe Station</span>
+        </div>
+        <div class="cv-entry-desc">Engineered an ultra-compact 800 Oe @ 1A electromagnet designed to fit directly onto high-frequency microwave probe station chucks.</div>
+      </div>
+      <div class="cv-entry">
+        <div class="cv-entry-header">
+          <span class="cv-entry-title">4. Low-Cost Speed-Controllable Precision Optical Chopper</span>
+        </div>
+        <div class="cv-entry-desc">Developed an Arduino & BLDC drone motor based chopper with 3D printed slotted discs producing light modulation up to 2.8 kHz at &lt;₹3,800 INR BOM.</div>
+      </div>
+    </section>
+
+    <!-- Publications List -->
+    <section class="cv-section">
+      <h2 class="cv-section-title">Peer-Reviewed Publications (Chronological)</h2>
+      <ol class="cv-pub-list" reversed>
+        <li>
+          P. Anil, <strong>B. Arun</strong>, B. Saidulu, K. C. James Raju, V. V. Ravi Kanth Kumar, "Nitrogen-doped defect-induced dipolar polarisation in CNZF/NrGO/MWCNT nanocomposites for X & Ku-band microwave absorption", <em>Carbon Letters</em> 36(2), 907–935, 2026. <a href="https://doi.org/10.1007/s42823-026-01039-0">doi:10.1007/s42823-026-01039-0</a>
+        </li>
+        <li>
+          <strong>B. Arun</strong>, Jisna Rahman, T. S. Akhil Raman, Asokan Kandasami, N. E. Rajeevan, K. C. James Raju, "Swift heavy ion irradiation induced structural, morphological, and magnetic characteristics of FeGaB magnetic thin films", <em>Journal of Physics D: Applied Physics</em> 59(7), 075001, 2026. <a href="https://doi.org/10.1088/1361-6463/ae423d">doi:10.1088/1361-6463/ae423d</a>
+        </li>
+        <li>
+          Andrews Joseph, <strong>B. Arun</strong>, T. S. Akhil Raman, E. K. Suresh, K. C. James Raju, "Influence of microwave annealing on the structural, optical, and microwave dielectric properties of NBT thin films", <em>Indian Journal of Physics</em>, 2025. <a href="https://doi.org/10.1007/s12648-025-03845-0">doi:10.1007/s12648-025-03845-0</a>
+        </li>
+        <li>
+          Pasupuleti Anil, Andrews Joseph, <strong>B. Arun</strong>, K. C. James Raju, V. V. Ravi Kanth Kumar, "Enhanced X-band microwave absorption properties of cobalt ferrite/nitrogen-doped rGO nanocomposites", <em>Materials Science and Engineering: B</em> 323, 118859, 2026. <a href="https://doi.org/10.1016/j.mseb.2025.118859">doi:10.1016/j.mseb.2025.118859</a>
+        </li>
+        <li>
+          Ateed Ahmad, <strong>B. Arun</strong>, Prabhu Rajagiri, K. C. James Raju, "Effects of light interstitial doping of Cu and Ag on the structural, magnetic and magneto-dynamics properties of Fe85Ga15 films", <em>Journal of Magnetism and Magnetic Materials</em> 615, 173556, 2025. <a href="https://doi.org/10.1016/j.jmmm.2025.173556">doi:10.1016/j.jmmm.2025.173556</a>
+        </li>
+        <li>
+          Santhoshkumar Dani, Arshad Ayub Hasamkal, Shivalingayya Gaddimath, <strong>B. Arun</strong>, K. C. James Raju, Ramcharan Meena, Pravin Kumar, Saif A. Khan, Khadke Udaykumar, "Ion Beam Irradiated Polyvinylidene Fluoride–Nickel Oxide Nanocomposites for Efficient Electromagnetic Shielding and Microwave Absorption", <em>Polymer Composites</em> 47(6), 5159–5174, 2026. <a href="https://doi.org/10.1002/pc.70481">doi:10.1002/pc.70481</a>
+        </li>
+        <li>
+          Prabhu Rajagiri, <strong>B. Arun</strong>, S. Shanmukharao Samatham, Sankararao Yadam, Rajagopal Kurapati, Santhosh Kumar Adpa, Bunty Rani Roy, Gowrinaidu Babbadi, K. C. James Raju, "Uncovering the magnetism, universality class, magnetocaloric effect and ferromagnetic resonance of quenching-treated Co0.3Zn0.7Fe2O4", <em>Materials Chemistry and Physics</em> 345, 131176, 2025. <a href="https://doi.org/10.1016/j.matchemphys.2025.131176">doi:10.1016/j.matchemphys.2025.131176</a>
+        </li>
+        <li>
+          Ateed Ahmad, <strong>B. Arun</strong>, J. Arout Chelvane, K. C. James Raju, "Structural, magnetic, and frequency domain ferromagnetic resonance studies of Fe82Ga18/Al2O3(001) films lightly doped with Cu and Ag", <em>Journal of Applied Physics</em> 137(15), 153901, 2025. <a href="https://doi.org/10.1063/5.0260810">doi:10.1063/5.0260810</a>
+        </li>
+        <li>
+          S. Dani, A. A. Hasamkal, P. Patil, <strong>B. Arun</strong>, K. C. James Raju, K. Udaykumar, "Improved electromagnetic interference shielding in lightweight polyvinylidene fluoride–carbon nanotube composite films", <em>Journal of Applied Polymer Science</em> 142(11), e56589, 2025. <a href="https://doi.org/10.1002/app.56589">doi:10.1002/app.56589</a>
+        </li>
+        <li>
+          T. S. Akhil Raman, Andrews Joseph, <strong>B. Arun</strong>, E. K. Suresh, S. Chedurupalli, K. C. James Raju, "Structural and Dielectric Properties of Laser Crystallized BST Thin Films for Microwave Device Applications", <em>IEEE IWIS</em>, 135–137, 2023. <a href="https://doi.org/10.1109/IWIS61214.2023.10302775">doi:10.1109/IWIS61214.2023.10302775</a>
+        </li>
+        <li>
+          E. K. Suresh, <strong>B. Arun</strong>, Andrews Joseph, T. S. Akhil Raman, P. Nikhil Mohan, C. Shivakumar, K. C. James Raju, "Role of buffer layers on the strain-induced insulator-metal transition of VO2 thin films: a review", <em>Critical Reviews in Solid State and Materials Sciences</em> 50(2), 137–160, 2025. <a href="https://doi.org/10.1080/10408436.2024.2400346">doi:10.1080/10408436.2024.2400346</a>
+        </li>
+        <li>
+          P. Nikhil Mohan, C. Thirmal, Andrews Joseph, <strong>B. Arun</strong>, K. S. Priya, P. Murugavel, G. Suresh, T. Vishwam, K. C. James Raju, "Microwave, ferroelectric and electromechanical studies of free standing blended electroactive polymer films", <em>Materials Research Bulletin</em> 181, 113105, 2025. <a href="https://doi.org/10.1016/j.materresbull.2024.113105">doi:10.1016/j.materresbull.2024.113105</a>
+        </li>
+        <li>
+          P. Nikhil Mohan, C. Thirmal, G. Suresh, <strong>B. Arun</strong>, Andrews Joseph, T. Vishwam, K. C. James Raju, "Microwave dielectric characterization of P(VDF‐TrFE)‐CuO nanocomposite free‐standing flexible films", <em>Journal of Applied Polymer Science</em> 142(6), e56462, 2025. <a href="https://doi.org/10.1002/app.56462">doi:10.1002/app.56462</a>
+        </li>
+        <li>
+          P. Nikhil Mohan, C. Thirmal, T. Vishwam, Andrews Joseph, <strong>B. Arun</strong>, K. C. James Raju, "Microwave dielectric characterization studies of PVDF-TrFE-Nafion blended films", <em>Ferroelectrics</em> 618(2), 474–485, 2024. <a href="https://doi.org/10.1080/00150193.2023.2273724">doi:10.1080/00150193.2023.2273724</a>
+        </li>
+        <li>
+          Shilpee Chauhan, <strong>B. Arun</strong>, K. C. James Raju, Muhamed Shafeeq M., D. P. Mondal, Avanish Kumar Srivastava, Pradip Kumar, "An ultrathin and flexible polymer composite film at a low fraction of reduced graphene oxide for Ku-band electromagnetic interference shielding", <em>Surfaces and Interfaces</em> 46, 103961, 2024. <a href="https://doi.org/10.1016/j.surfin.2024.103961">doi:10.1016/j.surfin.2024.103961</a>
+        </li>
+        <li>
+          Manisha Thakur, Charanjeet Singh, K. C. James Raju, <strong>B. Arun</strong>, T. Tchouank Tekou Carol, A. K. Srivastava, "Fabrication of bicomponent Co–La substituted strontium hexaferrite for tunable microwave absorber application: Structural, morphological, reflection loss, input impedance metrics", <em>Physica B: Condensed Matter</em> 679, 415735, 2024. <a href="https://doi.org/10.1016/j.physb.2024.415735">doi:10.1016/j.physb.2024.415735</a>
+        </li>
+        <li>
+          T. S. Akhil Raman, <strong>B. Arun</strong>, C. Shivakumar, Andrews Joseph, K. C. James Raju, "Influence of oxygen pressure during deposition on the microwave dielectric tunability of Ba0.5Sr0.5TiO3 thin films in PLD process", <em>Applied Surface Science</em> 669, 160477, 2024. <a href="https://doi.org/10.1016/j.apsusc.2024.160477">doi:10.1016/j.apsusc.2024.160477</a>
+        </li>
+        <li>
+          <strong>B. Arun</strong>, Andrews Joseph, J. Arout Chelvane, K. C. James Raju, "Effect of RF power on magnetic properties and composition of FeGaB thin films", <em>AIP Conference Proceedings</em> 2995(1), 020177, 2024. <a href="https://doi.org/10.1063/5.0179425">doi:10.1063/5.0179425</a>
+        </li>
+        <li>
+          S. A. V. Prasad, C. Srinivas, R. J. Kumar, <strong>B. Arun</strong>, K. C. James Raju, E. Ranjith Kumar, D. L. Sastry, "Thickness dependent microwave absorption in Mn-substituted Mg-Zn ferrites with quarter wavelength mechanism", <em>Materials Science in Semiconductor Processing</em> 214, 110881, 2026. <a href="https://doi.org/10.1016/j.mssp.2025.110881">doi:10.1016/j.mssp.2025.110881</a>
+        </li>
+        <li>
+          E. K. Suresh, T. S. Akhil Raman, A. Othman, <strong>B. Arun</strong>, Andrews Joseph, K. C. James Raju, "Temperature stable (1 − x)BaV2O6-xBaZnV2O7 (x = 0.35–0.55) composite ceramics for low temperature co-fired ceramic applications", <em>Journal of Materials Science: Materials in Electronics</em> 34(14), 1159, 2023. <a href="https://doi.org/10.1007/s10854-023-10570-z">doi:10.1007/s10854-023-10570-z</a>
+        </li>
+        <li>
+          Ch. Srinivas, K. Naga Praveen, E. Ranjith Kumar, T. V. Chandrasekhar Rao, C. L. Prajapat, Sher Singh Meena, Pramod Bhatt, <strong>B. Arun</strong>, K. C. James Raju, D. L. Sastry, "Shielding performance of MnxNi0.8–xZn0.2Fe2O4 (0.1≤x≤0.7) for electromagnetic interference (EMI) in X-band frequency", <em>Ceramics International</em> 48(7), 9987–9997, 2022. <a href="https://doi.org/10.1016/j.ceramint.2021.12.205">doi:10.1016/j.ceramint.2021.12.205</a>
+        </li>
+        <li>
+          Ch. Srinivas, K. Naga Praveen, E. Ranjith Kumar, Surendra Singh, Sher Singh Meena, Pramod Bhatt, T. V. Chandrasekhar Rao, Debashish Sarkar, <strong>B. Arun</strong>, K. C. James Raju, D. L. Sastry, "Microwave absorption properties of rare earth (RE) ions doped Mn–Ni–Zn nanoferrites (RE = Dy, Sm, Ce, Er) to shield electromagnetic interference (EMI) in X-band frequency", <em>Ceramics International</em> 48(22), 33891–33900, 2022. <a href="https://doi.org/10.1016/j.ceramint.2022.07.338">doi:10.1016/j.ceramint.2022.07.338</a>
+        </li>
+      </ol>
+    </section>
+
+    <!-- Conferences -->
+    <section class="cv-section">
+      <h2 class="cv-section-title">Conference Presentations</h2>
+      <div class="cv-entry">
+        <div class="cv-entry-header">
+          <span class="cv-entry-title">ICMAGMA 2025 (IISc Bangalore)</span>
+          <span class="cv-entry-date">Feb 2025</span>
+        </div>
+        <div class="cv-entry-desc">Poster: <em>"Effect of Swift Heavy Ion (SHI) Irradiation on Magnetic Properties of FeGaB Thin Film"</em></div>
+      </div>
+      <div class="cv-entry">
+        <div class="cv-entry-header">
+          <span class="cv-entry-title">Frontiers in Physics 2024 (Univ. of Hyderabad)</span>
+          <span class="cv-entry-date">Sep 2024</span>
+        </div>
+        <div class="cv-entry-desc">Poster: <em>"Development of VNA FMR and precise determination of Landé g-factor of FeGaB Thin films"</em></div>
+      </div>
+      <div class="cv-entry">
+        <div class="cv-entry-header">
+          <span class="cv-entry-title">ACMMT 2023 (Chiang Mai, Thailand)</span>
+          <span class="cv-entry-date">Nov 2023</span>
+        </div>
+        <div class="cv-entry-desc">Oral Presentation: <em>"Room Temperature Static Magnetic Properties of Pt/FeGaB/Pt Tri-Layer"</em></div>
+      </div>
+      <div class="cv-entry">
+        <div class="cv-entry-header">
+          <span class="cv-entry-title">ICACMP 2023 (GITAM Hyderabad)</span>
+          <span class="cv-entry-date">Oct 2023</span>
+        </div>
+        <div class="cv-entry-desc">Oral Presentation: <em>"Ferromagnetic Resonance Characterization of FeGaB Thin Films Using VNA"</em></div>
+      </div>
+      <div class="cv-entry">
+        <div class="cv-entry-header">
+          <span class="cv-entry-title">ICMAGMA 2023 (Hyderabad, India)</span>
+          <span class="cv-entry-date">Dec 2023</span>
+        </div>
+        <div class="cv-entry-desc">Poster: <em>"Frequency domain ferromagnetic measurements in FeGaB thin films"</em></div>
+      </div>
+    </section>
+
+    <!-- Technical Skills -->
+    <section class="cv-section">
+      <h2 class="cv-section-title">Technical & Characterization Expertise</h2>
+      <div class="skill-grid">
+        <div class="skill-category">Thin Film Deposition:</div>
+        <div class="skill-items">RF/DC Magnetron Sputtering, Pulsed Laser Deposition (PLD), Sputter Coaters.</div>
+        <div class="skill-category">High Frequency:</div>
+        <div class="skill-items">Vector Network Analyzers (VNA), VNA-FMR, Waveguides (X & Ku bands), Cavity Perturbation.</div>
+        <div class="skill-category">Magnetic:</div>
+        <div class="skill-items">Conventional MOKE (TIFR), Quantum Design PPMS, In-plane / Out-of-plane M-H loops.</div>
+        <div class="skill-category">Micro/Nanofab:</div>
+        <div class="skill-items">Photolithography, Mask aligner, Wet & dry etching, MEMS micro-cantilevers (CeNSE IISc).</div>
+        <div class="skill-category">Structural/Surface:</div>
+        <div class="skill-items">FESEM, Powder & GI-XRD, XRR, AFM, Stylus Profilometry, UV-Vis-NIR Spectrophotometry.</div>
+        <div class="skill-category">Large Facilities:</div>
+        <div class="skill-items">Swift Heavy Ion (SHI) Irradiation Pelletron Beamlines (IUAC New Delhi).</div>
+        <div class="skill-category">Computation & Code:</div>
+        <div class="skill-items">LabVIEW Automation, Python (NumPy, SciPy, Matplotlib), Arduino Embedded C++, Automated Data Acquisition.</div>
+      </div>
+    </section>
+
+    <!-- Advanced Workshops -->
+    <section class="cv-section">
+      <h2 class="cv-section-title">Specialized Cleanroom & Analytical Trainings</h2>
+      <ul style="padding-left: 20px; font-size: 0.875rem; color: var(--text-gray); line-height: 1.6;">
+        <li><strong>INUP-i2i Hands-on Training on Nanofabrication & Characterization:</strong> CeNSE, IISc Bangalore (Feb 2023).</li>
+        <li><strong>INUP-i2i Nanofabrication Technologies Workshop:</strong> IIT Bombay (Jan 2023).</li>
+        <li><strong>ASSURE Workshop on Magnetism:</strong> TIFR Hyderabad & Osmania University (Dec 2024).</li>
+        <li><strong>Powder and GI-XRD Advanced Instrument Training:</strong> School of Physics, UoH (Mar 2025).</li>
+        <li><strong>Workshop on Ion/Laser Beams in Nano-Science (WINS-2025):</strong> CFN, University of Hyderabad (Feb 2025).</li>
+        <li><strong>Python for Data Analysis Hands-on Workshop:</strong> SCIS, University of Hyderabad (Jan 2024).</li>
+        <li><strong>Workshop on Rietveld Refinement:</strong> MAMO College & SIAS Research Forum (Mar 2024).</li>
+      </ul>
+    </section>
+
+    <!-- Mentorship & Teaching -->
+    <section class="cv-section">
+      <h2 class="cv-section-title">Mentorship & Outreach</h2>
+      <div class="cv-entry">
+        <div class="cv-entry-header">
+          <span class="cv-entry-title">M.Sc. Physics Project Mentorship</span>
+          <span class="cv-entry-date">2024 – 2025</span>
+        </div>
+        <div class="cv-entry-desc">Mentored Suraj Chandra Joshi (23PHMP02), University of Hyderabad: <em>"Investigation of the magnetic properties of FeGaB thin films via VNA-FMR and high-frequency characterization"</em>.</div>
+      </div>
+      <div class="cv-entry">
+        <div class="cv-entry-header">
+          <span class="cv-entry-title">TheSciencia.com & YouTube Channel</span>
+          <span class="cv-entry-date">Active</span>
+        </div>
+        <div class="cv-entry-desc">Founder and primary educator delivering high-level CSIR-NET and SET Physical Sciences lectures.</div>
+      </div>
+    </section>
+
+  </main>
+</body>
+</html>
