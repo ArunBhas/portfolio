@@ -30,12 +30,6 @@ portfolio/
 │           ├── conferences/     # Conference presentation proofs & certificates
 │           └── gallery/         # Supplementary fieldwork & lab documentary archive
 │
-├── ai_generated/                # 🤖 Archived AI tools, tests & scrapers
-│   ├── scripts/                 # 53 Python automation, audit, and test scripts
-│   ├── scraped_data/            # Raw JSON dumps & extracted data from Google Sites
-│   ├── site_mirror/             # Static mirror archive of the legacy Google Site
-│   └── screenshots/             # Visual verification screenshots captured during testing
-│
 ├── .github/
 │   └── workflows/
 │       └── update_scholar.yml   # 15-day automated Google Scholar sync workflow
