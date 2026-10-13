@@ -186,9 +186,16 @@
 
     .skill-grid {
       display: grid;
-      grid-template-columns: 140px 1fr;
-      gap: 10px 16px;
+      grid-template-columns: 215px 1fr;
+      gap: 12px 18px;
       font-size: 0.875rem;
+    }
+
+    @media (max-width: 680px) {
+      .skill-grid {
+        grid-template-columns: 1fr;
+        gap: 6px;
+      }
     }
 
     .skill-category {
@@ -198,6 +205,7 @@
 
     .skill-items {
       color: var(--text-gray);
+      line-height: 1.55;
     }
 
     /* Action bar */
@@ -562,24 +570,34 @@
       </div>
     </section>
 
-    <!-- Technical Skills -->
+    <!-- Core Competencies & Technical Expertise -->
     <section class="cv-section">
-      <h2 class="cv-section-title">Technical & Characterization Expertise</h2>
+      <h2 class="cv-section-title">Core Competencies &amp; Technical Expertise</h2>
       <div class="skill-grid">
-        <div class="skill-category">Thin Film Deposition:</div>
-        <div class="skill-items">RF/DC Magnetron Sputtering, Pulsed Laser Deposition (PLD), Sputter Coaters.</div>
-        <div class="skill-category">High Frequency:</div>
-        <div class="skill-items">Vector Network Analyzers (VNA), VNA-FMR, Waveguides (X & Ku bands), Cavity Perturbation.</div>
-        <div class="skill-category">Magnetic:</div>
-        <div class="skill-items">Conventional MOKE (TIFR), Quantum Design PPMS, In-plane / Out-of-plane M-H loops.</div>
-        <div class="skill-category">Micro/Nanofab:</div>
-        <div class="skill-items">Photolithography, Mask aligner, Wet & dry etching, MEMS micro-cantilevers (CeNSE IISc).</div>
-        <div class="skill-category">Structural/Surface:</div>
-        <div class="skill-items">FESEM, Powder & GI-XRD, XRR, AFM, Stylus Profilometry, UV-Vis-NIR Spectrophotometry.</div>
-        <div class="skill-category">Large Facilities:</div>
-        <div class="skill-items">Swift Heavy Ion (SHI) Irradiation Pelletron Beamlines (IUAC New Delhi).</div>
-        <div class="skill-category">Computation & Code:</div>
-        <div class="skill-items">LabVIEW Automation, Python (NumPy, SciPy, Matplotlib), Arduino Embedded C++, Automated Data Acquisition.</div>
+        <div class="skill-category">Advanced Materials &amp; Nanofabrication:</div>
+        <div class="skill-items">Nanofabrication, Cleanroom Operations, Semiconductor Device Fabrication, Thin Film Deposition, Sputter Deposition, Materials Characterization, Thin Film Characterization, Device Characterization, Ferromagnetic Resonance (FMR), XPS Analysis.</div>
+
+        <div class="skill-category">RF &amp; Microwave Engineering:</div>
+        <div class="skill-items">RF Testing &amp; Measurement, Microwave Characterization, On-Wafer RF Testing, Vector Network Analyzer (VNA), EMI/EMC Testing, Microwave Shielding Effectiveness Testing.</div>
+
+        <div class="skill-category">Embedded Systems &amp; Instrumentation:</div>
+        <div class="skill-items">Embedded Systems Development, STM32 Development, Microcontroller Programming, Embedded C, Sensor Integration, Instrumentation Development, Test &amp; Measurement Systems, NI LabVIEW, Hardware-Software Integration, Data Acquisition Systems (DAQ).</div>
+
+        <div class="skill-category">Communication Protocols:</div>
+        <div class="skill-items">SPI, I&sup2;C, UART.</div>
+
+        <div class="skill-category">Design &amp; Prototyping:</div>
+        <div class="skill-items">Autodesk Fusion 360, CAD Design, 3D Printing.</div>
+
+        <div class="skill-category">Tools, Software &amp; Instruments:</div>
+        <div class="skill-items">Python, KLayout, OriginPro, STM32CubeIDE, VNA, Keithley SMU, Quantum Magnetometer (PPMS).</div>
+
+        <div class="skill-category">Leadership &amp; Systems Engineering:</div>
+        <div class="skill-items">Technical Leadership, Cross-Functional Team Management, Project Planning &amp; Execution, Resource Planning, Risk Management &amp; Mitigation, Technical Mentoring, Systems Engineering, Research &amp; Development (R&amp;D).</div>
+      </div>
+
+      <div style="margin-top: 14px; padding: 12px 14px; background: #f8fafc; border: 1px solid var(--border); border-radius: 6px; font-size: 0.8125rem; color: var(--text-gray); line-height: 1.55;">
+        <strong style="color: var(--text-dark);">Comprehensive Technical Index:</strong> Nanofabrication &bull; Semiconductor Device Fabrication &bull; Thin Film Deposition &bull; Materials Characterization &bull; Ferromagnetic Resonance (FMR) &bull; XPS Analysis &bull; RF &amp; Microwave Characterization &bull; On-Wafer RF Testing &bull; Embedded Systems Development &bull; STM32 Development &bull; Sensor Integration &bull; Instrumentation Development &bull; Test &amp; Measurement Systems &bull; NI LabVIEW &bull; KLayout &bull; Python &bull; OriginPro &bull; Autodesk Fusion 360 &bull; STM32CubeIDE &bull; VNA &bull; Keithley SMU &bull; Quantum Magnetometer &bull; SPI &bull; I&sup2;C &bull; UART &bull; Hardware-Software Integration &bull; Systems Engineering &bull; Technical Leadership &bull; Cross-Functional Team Management &bull; Project Planning &amp; Execution &bull; Risk Mitigation &bull; Technical Mentoring &bull; Research &amp; Development (R&amp;D).
       </div>
     </section>
 
