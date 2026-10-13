@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Curriculum Vitae | Arun B – University of Hyderabad</title>
+  <title>Curriculum Vitae | Arun B – Team Leader, Qubeats &amp; Ph.D. Researcher</title>
   
-  <meta name="description" content="Academic Curriculum Vitae of Arun B, Senior Research Scholar affiliated with School of Physics, University of Hyderabad (CASEST Laboratory).">
+  <meta name="description" content="Academic and Professional Curriculum Vitae of Arun B, Team Leader at Qubeats and Senior Research Scholar affiliated with School of Physics, University of Hyderabad (CASEST Laboratory).">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -73,12 +73,27 @@
       color: var(--text-gray);
       display: flex;
       flex-direction: column;
-      gap: 4px;
+      align-items: flex-end;
+      gap: 5px;
+    }
+
+    .cv-contact-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .cv-contact-item svg {
+      flex-shrink: 0;
+      color: var(--primary);
     }
 
     .cv-contact-info a {
       color: var(--primary);
       text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
     }
 
     .cv-contact-info a:hover {
@@ -86,8 +101,7 @@
     }
 
     .cv-section {
-      margin-bottom: 32px;
-      page-break-inside: avoid;
+      margin-bottom: 28px;
     }
 
     .cv-section-title {
@@ -103,6 +117,8 @@
 
     .cv-entry {
       margin-bottom: 16px;
+      page-break-inside: avoid;
+      break-inside: avoid;
     }
 
     .cv-entry-header {
@@ -115,6 +131,17 @@
     .cv-entry-title {
       font-weight: 700;
       font-size: 1rem;
+    }
+
+    .cv-entry-title a,
+    .cv-entry-desc a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    .cv-entry-title a:hover,
+    .cv-entry-desc a:hover {
+      text-decoration: underline;
     }
 
     .cv-entry-date {
@@ -228,8 +255,11 @@
         padding: 0;
       }
       a {
-        color: inherit !important;
+        color: var(--primary) !important;
         text-decoration: none !important;
+      }
+      .cv-contact-item svg {
+        color: var(--primary) !important;
       }
     }
   </style>
@@ -240,29 +270,107 @@
     <a href="index.html" class="btn-action">
       &larr; Back to Portfolio Website
     </a>
-    <button onclick="window.print()" class="btn-action primary">
-      🖨️ Print / Save as PDF
-    </button>
+    <div style="display: flex; gap: 10px;">
+      <a href="cv.pdf" download="Arun_B_Curriculum_Vitae.pdf" class="btn-action">
+        📥 Download PDF
+      </a>
+      <button onclick="window.print()" class="btn-action primary">
+        🖨️ Print / Save as PDF
+      </button>
+    </div>
   </div>
 
   <main class="cv-container">
     <header class="cv-header">
       <div>
         <h1 class="cv-name">Arun B</h1>
-        <div class="cv-title">Senior Research Scholar (Applied Physics)</div>
+        <div class="cv-title">Team Leader at Qubeats &bull; Ph.D. Researcher (Applied Physics)</div>
         <div class="cv-dept">
-          School of Physics, University of Hyderabad, Telangana, India<br>
-          <em>CASEST Laboratory</em>
+          Qubeats &bull; School of Physics, University of Hyderabad (CASEST Laboratory), India
         </div>
       </div>
       <div class="cv-contact-info">
-        <div><strong>Email:</strong> <a href="mailto:arunskalikavu@gmail.com">arunskalikavu@gmail.com</a></div>
-        <div><strong>Phone:</strong> +91 9496845082</div>
-        <div><strong>Scholar:</strong> <a href="https://scholar.google.com/citations?user=Su9nLc4AAAAJ&hl=en" target="_blank">Google Scholar Profile</a></div>
-        <div><strong>ORCID:</strong> 0009-0005-7767-3128</div>
-        <div><strong>Location:</strong> Hyderabad 500046, India</div>
+        <div class="cv-contact-item">
+          <svg fill="none" height="14" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="14"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          <a href="mailto:arunskalikavu@gmail.com">arunskalikavu@gmail.com</a>
+        </div>
+        <div class="cv-contact-item">
+          <svg fill="none" height="14" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="14"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          <span>+91 9496845082</span>
+        </div>
+        <div class="cv-contact-item">
+          <a href="https://sites.google.com/view/arunb/home" target="_blank" title="Personal Portfolio Website">
+            <svg fill="none" height="14" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="14"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+            <strong>Website</strong>
+          </a>
+        </div>
+        <div class="cv-contact-item">
+          <a href="https://www.linkedin.com/in/arun-b-5b7160337" target="_blank" title="LinkedIn Profile">
+            <svg fill="currentColor" height="14" viewBox="0 0 24 24" width="14"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path></svg>
+            <strong>LinkedIn</strong>
+          </a>
+        </div>
+        <div class="cv-contact-item">
+          <a href="https://scholar.google.com/citations?user=Su9nLc4AAAAJ&hl=en" target="_blank" title="Google Scholar Citations">
+            <svg fill="currentColor" height="14" viewBox="0 0 24 24" width="14"><path d="M12 24a12 12 0 1 1 0-24 12 12 0 0 1 0 24zm-1.5-15.5H8v7h2.5v-7zm5 0h-2.5v7H15.5v-7z"></path></svg>
+            <strong>Google Scholar</strong>
+          </a>
+        </div>
+        <div class="cv-contact-item">
+          <svg fill="none" height="14" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="14"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+          <span>Hyderabad 500046, India</span>
+        </div>
       </div>
     </header>
+
+    <!-- Professional Experience & Engineering Leadership -->
+    <section class="cv-section">
+      <h2 class="cv-section-title">Professional Experience &amp; Engineering Leadership</h2>
+      
+      <div class="cv-entry">
+        <div class="cv-entry-header">
+          <span class="cv-entry-title">Team Leader</span>
+          <span class="cv-entry-date">2026 February – Present</span>
+        </div>
+        <div class="cv-entry-sub">Qubeats</div>
+        <div class="cv-entry-desc">
+          <ul style="padding-left: 18px; margin-top: 4px; display: flex; flex-direction: column; gap: 3px;">
+            <li>Team leader of Magnetic Navigation application development for GPS-denied environments &mdash; driving core technology from prototype through to product development.</li>
+            <li>Leading and coordinating an engineering team of 16 members across embedded systems, hardware instrumentation, sensor fusion, and navigation algorithms.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="cv-entry">
+        <div class="cv-entry-header">
+          <span class="cv-entry-title">Electronics and Instrumentation Engineer</span>
+          <span class="cv-entry-date">2025 Dec – 2026 February</span>
+        </div>
+        <div class="cv-entry-sub">Qubeats</div>
+        <div class="cv-entry-desc">
+          <ul style="padding-left: 18px; margin-top: 4px; display: flex; flex-direction: column; gap: 3px;">
+            <li>Engineered specialized electronics, sensor acquisition pipelines, signal conditioning circuits, and automated instrumentation test fixtures for magnetic navigation and sensing systems.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Academic & Doctoral Research Appointment -->
+    <section class="cv-section">
+      <h2 class="cv-section-title">Academic &amp; Doctoral Research Appointment</h2>
+      <div class="cv-entry">
+        <div class="cv-entry-header">
+          <span class="cv-entry-title">Senior Research Scholar (Ph.D. Candidate)</span>
+          <span class="cv-entry-date">2019 – Present</span>
+        </div>
+        <div class="cv-entry-sub">School of Physics, University of Hyderabad (CASEST Laboratory)</div>
+        <div class="cv-entry-desc">
+          <strong>Supervisor:</strong> Prof. K. C. James Raju<br>
+          <strong>Status:</strong> Doctoral research completed; Ph.D. thesis submission in progress (Duration: 2019 – Present).<br>
+          <strong>Dissertation Focus:</strong> Synthesis of soft magnetic FeGaB thin films, dynamic high-frequency magnetization dynamics, broadband VNA-FMR characterization, magnetoelectric voltage coefficients, and lightweight EMI shielding nanocomposites.
+        </div>
+      </div>
+    </section>
 
     <!-- Fellowships & Qualifications -->
     <section class="cv-section">
@@ -294,22 +402,6 @@
           <span class="cv-entry-date">Completed</span>
         </div>
         <div class="cv-entry-sub">Physical Science Education</div>
-      </div>
-    </section>
-
-    <!-- Professional Research Profile -->
-    <section class="cv-section">
-      <h2 class="cv-section-title">Current Research Appointment</h2>
-      <div class="cv-entry">
-        <div class="cv-entry-header">
-          <span class="cv-entry-title">Senior Research Scholar (Ph.D. Candidate)</span>
-          <span class="cv-entry-date">2020 – Present</span>
-        </div>
-        <div class="cv-entry-sub">School of Physics, University of Hyderabad (CASEST Laboratory)</div>
-        <div class="cv-entry-desc">
-          <strong>Supervisor:</strong> Prof. K. C. James Raju<br>
-          <strong>Dissertation Focus:</strong> Synthesis of soft magnetic FeGaB thin films, dynamic high-frequency magnetization dynamics, broadband VNA-FMR characterization, magnetoelectric voltage coefficients, and lightweight EMI shielding nanocomposites.
-        </div>
       </div>
     </section>
 
@@ -517,10 +609,10 @@
       </div>
       <div class="cv-entry">
         <div class="cv-entry-header">
-          <span class="cv-entry-title">TheSciencia.com & YouTube Channel</span>
+          <span class="cv-entry-title"><a href="https://sites.google.com/view/thescienciaofficial/home" target="_blank">TheSciencia.com</a> &amp; <a href="https://www.youtube.com/@arunb1117" target="_blank">YouTube</a> Channel</span>
           <span class="cv-entry-date">Active</span>
         </div>
-        <div class="cv-entry-desc">Founder and primary educator delivering high-level CSIR-NET and SET Physical Sciences lectures.</div>
+        <div class="cv-entry-desc">Founder and primary educator delivering high-level CSIR-NET and SET Physical Sciences lectures across <a href="https://sites.google.com/view/thescienciaofficial/home" target="_blank">TheSciencia.com</a> and <a href="https://www.youtube.com/@arunb1117" target="_blank">YouTube</a>.</div>
       </div>
     </section>
 

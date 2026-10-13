@@ -1,6 +1,6 @@
 # Arun B – Academic Research Portfolio Repository
 
-Welcome to the official source repository for the academic research portfolio of **Arun B (B. Arun)**, Senior Research Scholar affiliated with the **School of Physics, University of Hyderabad** (conducting research in the **CASEST laboratory** under **Prof. K. C. James Raju**).
+Welcome to the official source repository for the portfolio and Curriculum Vitae of **Arun B (B. Arun)**, Team Leader at **Qubeats** (Magnetic Navigation for GPS-denied environments) and Senior Research Scholar affiliated with the **School of Physics, University of Hyderabad** (conducting doctoral research in the **CASEST laboratory** under **Prof. K. C. James Raju**, 2019 – Present).
 
 ---
 
