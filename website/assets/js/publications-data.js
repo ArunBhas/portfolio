@@ -2,8 +2,8 @@
  * CURATED PUBLICATION DATASET - ARUN B (B. Arun)
  * Senior Research Scholar, School of Physics, University of Hyderabad
  * 
- * Auto-synced with Google Scholar: 2026-10-13
- * Total Citations: 185 | h-index: 7 | i10-index: 7
+ * Auto-synced with Google Scholar: 2026-10-19
+ * Total Citations: 186 | h-index: 7 | i10-index: 7
  */
 
 const PUBLICATIONS_DATA = [
@@ -154,7 +154,7 @@ const PUBLICATIONS_DATA = [
     pages: "e56589",
     doi: "10.1002/app.56589",
     url: "https://doi.org/10.1002/app.56589",
-    citations: 13,
+    citations: 14,
     category: "absorption",
     categoryLabel: "Microwave Absorption & EMI Shielding",
     tags: ["PVDF-CNT", "Lightweight Films", "EMI Shielding", "High Citation"],
