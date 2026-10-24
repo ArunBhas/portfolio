@@ -2,7 +2,7 @@
  * CURATED PUBLICATION DATASET - ARUN B (B. Arun)
  * Senior Research Scholar, School of Physics, University of Hyderabad
  * 
- * Auto-synced with Google Scholar: 2026-10-19
+ * Auto-synced with Google Scholar: 2026-10-24
  * Total Citations: 186 | h-index: 7 | i10-index: 7
  */
 
